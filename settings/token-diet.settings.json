@@ -1,0 +1,8 @@
+{
+  "autoCompactEnabled": true,
+  "autoCompactWindow": 225000,
+  "skillOverrides": {
+    "example-skill-you-never-use": "name-only",
+    "another-unused-skill": "name-only"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "note": "Ten everyday dev questions. Same prompts run with and without the caveman rules.",
+  "prompts": [
+    {
+      "id": "py-mutable-default",
+      "category": "debugging",
+      "prompt": "My Python function `def add_item(item, items=[]): items.append(item); return items` keeps returning items from earlier calls. Why, and how do I fix it?"
+    },
+    {
+      "id": "cors-error",
+      "category": "debugging",
+      "prompt": "My React app on localhost:3000 calls my Flask API on localhost:5000 and the browser says: \"blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present\". What is happening and how do I fix it?"
+    },
+    {
+      "id": "sql-n-plus-one",
+      "category": "performance",
+      "prompt": "What is the N+1 query problem in an ORM like Django or SQLAlchemy, and how do I fix it?"
+    },
+    {
+      "id": "debounce-js",
+      "category": "code",
+      "prompt": "Write a debounce function in JavaScript and explain briefly how it works."
+    },
+    {
+      "id": "review-path-traversal",
+      "category": "code-review",
+      "prompt": "Review this Flask route for problems:\n\n@app.route('/download')\ndef download():\n    name = request.args.get('file')\n    return open('/srv/files/' + name, 'rb').read()"
+    },
+    {
+      "id": "git-undo-commit",
+      "category": "shell",
+      "prompt": "I committed to the wrong branch and have not pushed yet. How do I move that commit to a new branch and remove it from the current one?"
+    },
+    {
+      "id": "tcp-vs-udp",
+      "category": "explanation",
+      "prompt": "Explain the difference between TCP and UDP and when to use each."
+    },
+    {
+      "id": "cache-invalidation",
+      "category": "architecture",
+      "prompt": "We put Redis in front of Postgres for product pages and users sometimes see stale prices. What are the main cache invalidation strategies and which would you pick here?"
+    },
+    {
+      "id": "regex-email",
+      "category": "code",
+      "prompt": "Should I validate email addresses with a regex? If so, give me a sensible one, and tell me what it will get wrong."
+    },
+    {
+      "id": "docker-layer-cache",
+      "category": "devops",
+      "prompt": "My Docker build reinstalls all npm packages every time I change one source file. Why, and how do I fix the Dockerfile?"
+    }
+  ]
+}
